@@ -7,7 +7,7 @@ import javax.inject.Singleton
 class CardNumberValidator @Inject constructor() {
 
     fun isValidCardNumber( number:String):Boolean{
-        return number.length>=4 && number.toIntOrNull()!=null
+        return number.length>=4 && number.toIntOrNull()!=null && number.length<=16
     }
 
 }
